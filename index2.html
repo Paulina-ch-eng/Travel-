@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=ancho-del-dispositivo, escala-inicial=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="hoja-de-estilo"
+        integridad="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anónimo">
+    <link rel="hoja-de-estilo" href="activos/css/style.css">
+    <title>Viajes a la Patagonia</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid"> <a class="navbar-brand" href="#">Viajes a la Patagonia</a> <button
+                class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+                aria-controls="offcanvasDarkNavbar" aria-label="Alternar navegación"> <span
+                    class="navbar-toggler-icon"></span> </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 clase="offcanvas-title" id="offcanvasDarkNavbarLabel">Offcanvas oscuro</h5> <button
+                        type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Cerrar"></button>
+                </div>
+                <div clase="offcanvas-body">
+                    <ul clase="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li clase="nav-item"> <a clase="nav-link active" aria-current="page" href="#">Inicio</a> </li>
+                        <li clase="nav-item"> <a clase="nav-link" href="#">Enlace</a> </li>
+                        <li clase="nav-item dropdown"> <a clase="nav-link dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false"> Menú desplegable </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="#">Acción</a></li>
+                                <li><a class="dropdown-item" href="#">Otra acción</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Algo más aquí</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex mt-3" role="search"> <input class="form-control me-2" type="search"
+                            placeholder="Buscar" aria-label="Buscar"> <button class="btn btn-success"
+                            type="submit">Buscar</button> </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-5 pt-5">
+        <p class="text-center">¿Qué actividad le gustaría hacer?</p>
+        <div class="text-center mb-4"> <span>Actividades:</span> <select id="activity-select"
+                class="form-select d-inline w-auto ms-2">
+                <option value="trekking">Senderismo</option>
+                <option value="natacion">Natación</option>
+                <option value="ferry">Ferry</option>
+            </select> </div>
+        <div class="card mx-auto" style="width: 18rem;">
+            <div class="position-relative"> <img src="assets/img/trekking.jpg" class="card-img-top" alt="..."
+                    id="actividad-image">> <div
+                    class="card-img-overlay d-flex align-items-center justify-content-center text-center"
+                    id="activity-overlay" style="background-color: rgba(0,0,0,0.5); display: none;">
+                    <div class="text-white" id="overlay-text">TREKKING - Volcán Villarrica</div>
+                </div>
+            </div>
+            <div class="card-body">
+                <p class="card-text" id="activity-description">"Modalidad de excursionismo que consiste en recorrer a
+                    pie largas distancias o determinadas zonas, generalmente de alta montaña y poco frecuentadas por el
+                    turismo convencional".</p> <a href="#" class="card-link">Conocer más</a> <br><br> <a href="#"
+                    class="btn btn-primary">Agenda de actividad</a> >
+            </div>
+        </div>
+        <div class="tarjeta mx-auto" estilo="ancho: 18rem;">
+            <div clase="posición-relativa"> <img src="assets/img/natación.jpg" clase="tarjeta-img-superior" alt="..."
+                    id="imagen-de-actividad">> <div
+                    clase="tarjeta-img-superposición d-flex alinear-elementos-centro justificar-contenido-centro centro-texto"
+                    id="superposición-de-actividad" estilo="color-de-fondo: rgba(0,0,0,0.5); mostrar:none;">
+                    <div class="text-white" id="overlay-text">NATACION Lago Cochrane</div>
+                </div>
+            </div>
+            <div class="cuerpo de la tarjeta">
+                <p class=" card-text" id="activity-description">"Deporte o ejercicio que consiste en nadar: en las
+                    pruebas de natación se compite en velocidad, en cualquiera de los cuatro estilos: braza,crol,espalda
+                    y mariposa..</ p> <a href="#" class="card-link">Conocer más</a> <br><br> <a href="#"
+                        class="btn btn-primary">Agenda de actividad</a>
+            </div>
+        </div>
+        <div class="card mx-auto" style="width: 18rem;">
+            <div class="position-relative"> <img src="assets/img/ferry.jpg " class="card-img-top" alt="..."
+                    id="actividad-imagen">> <div
+                    class="card-img-overlay d-flex align-items-center justify-content-center text-center"
+                    id="actividad-overlay" style="background-color: rgba(0,0,0,0.5); display: none;">
+                    <div class="text-white" id="overlay-text">FERRY - Lago Llanquihue</div>
+                </div>
+            </div>
+            <div class="card">
+                <p clase="card-text">"Embarcación que realiza alternativamente el mismo recorrido entre dos puntos:
+                    especialmente la de grandes dimensiones destinada al transporte de cargas pesadas o pasajeros. ".
+                </p> <a href="#" class="card-link">Conocer más</a> <br><br> <a href="#" class="btn btn-primary">Agenda
+                    actividad</a>
+            </div>
+        </div>
+    </div>
+
+<script src="assets/js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</body>
+
+</html>
